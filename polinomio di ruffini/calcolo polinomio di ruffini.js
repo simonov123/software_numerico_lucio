@@ -44,7 +44,7 @@ function calcola(grado,base){
     results.textContent = "Valore del polinomio ="+ p;
     container.appendChild(results);
     for(m=0;m<grado+1;m++){
-        const newr=costanti[grado-m]+"*"+base+" elevato a "+m;
+        const newr=costanti[m]+"*"+base+" elevato a "+m;
         const newp=document.createElement("p");
         newp.textContent=newr;
         container.appendChild(newp);
